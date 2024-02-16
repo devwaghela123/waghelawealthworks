@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaghelaWealthWorks</title>
+  <meta name="description" content="An investment advisory firm committed to guiding you towards financial success through well-informed investment strategies. Founded and led by Dev Waghela, a visionary enthusiast dedicated to empowering individuals with effective investment insights and strategies.">
+  <link rel="stylesheet" href="teststyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600italic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+      <h1 class="business-name">
+        <span>Waghela</span>
+        <span>Wealth</span>
+        <span>Works</span>
+    </h1>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    
+    <div class="popup" id="popup">
+      <a href="start.html">Services</a>
+      <a href="#about">About</a>
+      <a href="messagesending.html">Contact</a>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+    
+    
+    <script>function toggleMenu() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+      if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      } else {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+      }
+    }
+    
+    function closeMenu() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+    
+    </script>  
+</header>
+
+<main>
+
+
+  <section id="about" class="about-section">
+    <h2 class="section-heading">About Us</h2>
+    <article>
+      <p>WaghelaWealthWorks operates on a client-centric model, offering tailored investment advisory services. Our value lies in providing personalized stock analysis, portfolio management, and strategic investment advice to individual investors and businesses across various industries. Through online platforms, direct consultations, and data-driven insights, we assist clients in making informed financial decisions. Our revenue streams stem from subscription-based services, consultations, and performance-based fees, ensuring our alignment with clients' financial success. With a dedicated team, cutting-edge analytical tools, and a commitment to excellence, we aim to empower our clients in achieving their investment goals.</p>
+    </article>
+  </section>
+</main>
+Hot Stocks In Indian Markets:
+<div class="stock-ticker">
+  <script src="tickerscript.js"></script>
+  <div class="ticker-list">
+    <!-- Replace with your stock items -->
+    <div class="ticker-item">BSE:ADANIENT</div>
+    <div class="ticker-item">BSE:RELIANCE</div>
+    <div class="ticker-item">BSE:ADANIPOWER</div>
+    <div class="ticker-item">BSE:HINDCOPPER</div>
+    <div class="ticker-item">BSE:INOXINDIA</div>
+    <div class="ticker-item">BSE:IREDA</div>
+    <div class="ticker-item">BSE:IDEA</div>
+    <div class="ticker-item">BSE:ONGC</div>
+    <div class="ticker-item">BSE:WIPRO</div>
+    <div class="ticker-item">BSE:TATAMOTORS</div>
+    <div class="ticker-item">BSE:OLECTRA</div>
+    <div class="ticker-item">BSE:IRFC</div>
+    <!-- Add more stock items as needed -->
+  </div>
+</div>
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <p>&copy; 2023 WaghelaWealthWorks. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
